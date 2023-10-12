@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2? family= Black+Ops+One & family= Dela+Gothic+One & family= Pixelify+Sans & display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a78b8;
+    height: 80px;
+}
+header h1 {
+    font-size: 60px;
+    color: white;
+    font-family:'Black Ops One', cursiva;;
+}
+.principal {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+    border: 1px solid blue;
+}
+.box-img {
+   display: flex;
+   justify-content: center;
+   width: 45%; 
+}
+.responsiva {
+    max-width: 100%;
+}
+.box-txt {
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+}
+.box-txt span {
+    color: gray;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+} 
+.box-txt h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 80px;
+    color: blueviolet;
+    font-weight: 800;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    line-height: 30px;
+
+}
+.box-txt p{
+    color: rgb(red, green, blue);
+    margin-top: 30px;
+    padding: 30px;
+}
+.btn-principal {
+    background: #50b80a;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 5px;
+    transition: 0,5s all;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.btn-principal:hover {
+    background: #060f00;
+    font-size: 18px;
+}
+.box-item:hover {
+    background: #ecdd06;
+    font-size: 18px;
+}
+.box-item {
+    width: 30%;
+    height: 380px;
+    background: #0a78b8;
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.tecnologia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+.m-top {
+    margin-top: 30px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background: #5d7c8d;
+    height: 150px;
+    color: whitesmoke;
+    font-size: 22px;
+}
+.whats {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+}
+@media screen and (max-width: 1200px) 
+   
+    header h1 {
+        font-size: 45px;
+    }
+.principal{
+    flex-direction: column-reverse;
+}
+.box-txt {
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+}
+.box-txt h2 {
+    font-size: 55px;
+}
+.box-txt p {
+    text-align: center;
+}
+.box-img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.box-item {
+    width: 95%;
+}
+footer {
+    font-size: 18px;
+    text-align: center;
+}
