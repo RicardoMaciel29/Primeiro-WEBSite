@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Simples</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <header>
-    <h1>MACIEL DESENVOLVEDOR.</h1>
-  </header>  
+  <header class="cabecalho">
+    <div class="logo-slogan" >
+        <img class="cabecalho-logo" src="/img/logo.png" alt="logo maciel dev">
+        <h1 class="cabecalho-slogan"><strong> Maciel Desenvolvedor</strong></h1>
+    </div>
+    <nav class="cabecalho-menu" >
+        <a class="cabecalho-item" href="/index.html">Home</a>
+        <a class="cabecalho-item" href="https://g1.globo.com/go/goias/">Noticias</a>
+        <a class="cabecalho-item" href="https://redecanais.zip/">Filmes</a>
+        <a class="cabecalho-item" href="https://hypeflix.tv/series/">Series</a>
+        <a class="cabecalho-item" href="/mini-projeto.html" >Mini Projeto</a>
+        <a class="cabecalho-item" href="/formulario.html" >Cadastro DEVs</a>
+    </nav>
+</header>
 
   <section class="principal">
     <div class="box-img">
@@ -58,20 +69,7 @@ Teve início na carreira em 2003 quando descobriu seu maior vício: códigos. <b
   <div class="whats"><a target="_blank" href="https://wa.me/5562992720932?text=oi+Bom_dia+qual+sua+duvida?"><img width="200" src="img/whatsapp-bt.png"></a>
   </div>
 
-  <script>
-    //PEGAR O ELEMENTO
-    const web = document.getElementById('web');
-
-    //EVENTO QUANDO MOUSE ESTIVER POR CIMA DA IMAGEM
-    web.addEventListener('mouseover' , function () {
-        web.src = "img/tecnologia.jpg"
-    });
-
-    //EVENTO QUANDO O MOUSE SAIR DE CIMA DA IMAGEM
-    web.addEventListener('mouseout' , function () {
-        web.src = "img/23-12-2.jpg"
-    })
-  </script>
+  <script src="JS.js"></script>
 
 </body>
 </html>
