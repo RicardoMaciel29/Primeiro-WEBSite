@@ -7,20 +7,46 @@ body {
     padding: 0;
     margin: 0;
     background: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
+.cabecalho{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background: #0a78b8;
-    height: 80px;
+    height: 60px;
 }
-header h1 {
-    font-size: 60px;
+nav a {
+    padding-right: 0px;
+    text-decoration: none;
     color: white;
-    font-family:'Black Ops One', cursiva;;
+    
+    
+   
+    
+}
+.logo-slogan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalho-logo{
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+}
+.cabecalho h1{
+    color: white;
+}
+  
+.cabecalho-item:hover{
+    background-color: #f1f1e8;
+    color: #5d7c8d;
+    border-radius: 8px;
+    font-size: 23px;
+    
 }
 .principal {
     display: flex;
@@ -32,7 +58,7 @@ header h1 {
 .box-img {
    display: flex;
    justify-content: center;
-   width: 45%; 
+   width: 90%; 
 }
 .responsiva {
     max-width: 100%;
@@ -75,7 +101,7 @@ header h1 {
     margin-left: 30px;
 }
 .btn-principal:hover {
-    background: #060f00;
+    background: #153002;
     font-size: 18px;
 }
 .box-item:hover {
@@ -117,11 +143,11 @@ footer {
     right: 20px;
     bottom: 80px;
 }
-@media screen and (max-width: 1200px) 
-   
-    header h1 {
+@media screen and (max-width: 1200px) {
+   header h1 {
         font-size: 45px;
     }
+}
 .principal{
     flex-direction: column-reverse;
 }
@@ -139,8 +165,8 @@ footer {
     text-align: center;
 }
 .box-img {
-    width: 100%;
-    margin-bottom: 40px;
+    width: 50%;
+    margin-bottom: 30px;
 }
 .box-item {
     width: 95%;
